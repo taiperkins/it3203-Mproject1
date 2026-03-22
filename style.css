@@ -1,0 +1,62 @@
+/* General page style */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f8;
+}
+
+/* Header */
+header {
+    background-color: #1f4e79;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navigation */
+nav {
+    background-color: #163a5c;
+    padding: 10px;
+}
+
+/* Make menu horizontal (FLEXBOX requirement ✅) */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+/* Space between menu items */
+nav ul li {
+    margin: 0 15px;
+}
+
+/* Link styling */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hover effect (REQUIRED ✅) */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #1f4e79;
+    color: white;
+    padding: 15px;
+}
