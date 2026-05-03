@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Web Development Quiz</h1>
+    <p>Test your understanding of web development basics</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="tools.html">Tools</a></li>
+        <li><a href="concepts.html">Key Concepts</a></li>
+        <li><a href="references.html">References</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="quiz.html" class="active">Quiz</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section class="quiz-section">
+        <h2>Self-Assessment Quiz</h2>
+        <p>Answer all questions and click submit to see your score.</p>
+
+        <form id="quizForm">
+            <div class="question-box">
+                <h3>1. Fill in the blank</h3>
+                <label for="q1">HTML creates the __________ of a webpage.</label>
+                <input type="text" id="q1" placeholder="Type your answer here">
+            </div>
+
+            <div class="question-box">
+                <h3>2. Multiple Choice</h3>
+                <p>Which language controls the visual design of a webpage?</p>
+                <label><input type="radio" name="q2" value="HTML"> HTML</label>
+                <label><input type="radio" name="q2" value="CSS"> CSS</label>
+                <label><input type="radio" name="q2" value="Python"> Python</label>
+                <label><input type="radio" name="q2" value="SQL"> SQL</label>
+            </div>
+
+            <div class="question-box">
+                <h3>3. Multiple Choice</h3>
+                <p>Which language adds interactivity to webpages?</p>
+                <label><input type="radio" name="q3" value="JavaScript"> JavaScript</label>
+                <label><input type="radio" name="q3" value="HTML"> HTML</label>
+                <label><input type="radio" name="q3" value="CSS"> CSS</label>
+                <label><input type="radio" name="q3" value="XML"> XML</label>
+            </div>
+
+            <div class="question-box">
+                <h3>4. Multiple Choice</h3>
+                <p>Which CSS feature helps websites adjust to different screen sizes?</p>
+                <label><input type="radio" name="q4" value="Media Queries"> Media Queries</label>
+                <label><input type="radio" name="q4" value="Comments"> Comments</label>
+                <label><input type="radio" name="q4" value="Headings"> Headings</label>
+                <label><input type="radio" name="q4" value="Variables"> Variables</label>
+            </div>
+
+            <div class="question-box">
+                <h3>5. Multi-Selection</h3>
+                <p>Select all that are good responsive design practices:</p>
+                <label><input type="checkbox" name="q5" value="flexible images"> Use flexible images</label>
+                <label><input type="checkbox" name="q5" value="media queries"> Use media queries</label>
+                <label><input type="checkbox" name="q5" value="readable text"> Keep text readable on small screens</label>
+                <label><input type="checkbox" name="q5" value="fixed width"> Force a fixed desktop width on phones</label>
+            </div>
+
+            <div class="button-group">
+                <button type="submit">Submit Quiz</button>
+                <button type="button" id="resetBtn">Reset Quiz</button>
+            </div>
+        </form>
+
+        <div id="results" class="results-box hidden">
+            <h2>Results</h2>
+            <div id="overallResult"></div>
+            <div id="totalScore"></div>
+            <div id="detailedResults"></div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Taizon Perkins | IT 3203 Project</p>
+    <a href="index.html">Project Home</a> |
+    <a href="https://ksuweb.github.io/IT3203/" target="_blank">Course Website</a>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html> 
